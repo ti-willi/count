@@ -1,31 +1,45 @@
 body {
-    background-color: black;
-}
+   background-color: black;
+}   
 
 .main {
+    background: url("img/logo.png");
+    background-repeat: no-repeat;
+    background-size: 1000px;
+    background-position: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 5%;
+    margin-top: 2%;
+    padding: 150px;
     
 }
 
 .button {
     display: inline-flex;
     align-items: center;
-    margin-top: 8em;
+    margin-top: 3em;
 }
 
 .btnStart {
     width: 240px;
     padding: 0.5em;
     font-size: 1.2em;
+    background-color: red;
+    border: none;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+.btnStart:hover, .btnBack:hover, .btnNext:hover {
+    cursor: pointer;
+    transform: scale(1.03);
 }
 
 .btnBack {
     width: 50px;
     padding: 0.3em;
     font-size: 1.3em;
+    transition: 0.3s;
     
 }
 
@@ -33,12 +47,13 @@ body {
     width: 50px;
     padding: 0.3em;
     font-size: 1.3em;
+    transition: 0.3s;
 }
 
 .text {
+    background: rgba(black, black, black, 0.5);
     color: white;   
     font-size: 1.3em;
     margin-right: 2em;
     margin-left: 2em;
-
 }
