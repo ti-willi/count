@@ -8,8 +8,12 @@ var count = localStorage.getItem("key")
 text.textContent = localStorage.getItem("key")
 
 btnStart.addEventListener("click", () => {
-    count = 0;
-    text.textContent = 0;
+    if (confirm("Tem certeza que deseja iniciar a contagem?") == true) {
+        count = 0;
+        text.textContent = 0;
+    }
+
+    
 })
 
 btnBack.addEventListener("click", () => {

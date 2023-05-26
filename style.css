@@ -1,0 +1,44 @@
+body {
+    background-color: black;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+    
+}
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    margin-top: 8em;
+}
+
+.btnStart {
+    width: 240px;
+    padding: 0.5em;
+    font-size: 1.2em;
+}
+
+.btnBack {
+    width: 50px;
+    padding: 0.3em;
+    font-size: 1.3em;
+    
+}
+
+.btnNext {
+    width: 50px;
+    padding: 0.3em;
+    font-size: 1.3em;
+}
+
+.text {
+    color: white;   
+    font-size: 1.3em;
+    margin-right: 2em;
+    margin-left: 2em;
+
+}
