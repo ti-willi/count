@@ -1,5 +1,6 @@
 body {
    background-color: black;
+   background-image: url("img/logo.png");
    font-family: 'Quantico', sans-serif;
 }   
 
@@ -14,9 +15,12 @@ body {
 }
 
 .main h2 {
-   color: white;
-   font-size: 2em;
-   text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    color: white;
+    font-size: 2em;
+    padding: 15px;
+    text-align: center;
 }
 
 .button {
@@ -29,7 +33,6 @@ body {
     background-color: rgb(25, 183, 211);
     padding: 5px;
     border-radius: 25px;
-
 }
 
 .button button {
@@ -37,6 +40,7 @@ body {
     width: 45px;
     height: 45px;
     font-size: 2em;
+    font-weight: bold;
     background: none;
     border: 3px solid whitesmoke; 
     border-radius: 50%;
@@ -48,6 +52,7 @@ body {
     text-align: center;
     color: whitesmoke;   
     font-size: 2em;
+    font-weight: bold;
     border: none;
     margin-left: 0.3em;
     margin-right: 0.3em;
@@ -56,7 +61,8 @@ body {
 .btnResetCount {
     width: 250px;
     padding: 10px;
-    font-size: 1.5em;
+    font-size: 1.3em;
+    font-weight: bold;
     background-color: rgb(223, 15, 174);
     box-shadow: 2px 2px 10px whitesmoke;
     transition: 0.3s;
@@ -70,3 +76,4 @@ body {
     cursor: pointer;
     transform: scale(1.02);
 }
+
