@@ -14,10 +14,10 @@ button.forEach( (e) => {
 
 document.addEventListener("keyup", (event) => {
     if (event.code === "ArrowRight") {
-        count += 1;
+        count++;
     }
     else if (event.code === "ArrowLeft") {
-        (count <= 0) ? count = 0 : count += - 1;
+        (count <= 0) ? count = 0 : count--;
     }
     else if (event.code === "Delete") {
         resetCount(event);
@@ -35,11 +35,11 @@ function keyValueVerification() {
 }
 
 function updatedCount(click) {
-    if (click === '-' || click.code === 'Arrowleft') {
-        (count <= 0) ? count = 0 : count += - 1;
+    if (click === '-') {
+        (count <= 0) ? count = 0 : count--;
     }
     else {
-        count += 1; 
+        count++; 
     }
     text.textContent = count;
     localStorage.setItem("key", count);
@@ -52,7 +52,7 @@ function resetCount(click) {
             text.textContent = 0;
         }
         else {
-            count += - 1;
+            count--;
             text.textContent = count;
         }
     }
